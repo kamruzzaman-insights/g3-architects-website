@@ -9,9 +9,10 @@
 }
 
 /* shared styles  */
-.navbar, banner {
+.navbar, .banner {
     max-width: 1440px;
     margin: 0 auto;
+    text-align: center;
 }
 
 main {
@@ -36,6 +37,15 @@ header {
 .dark-three {
     color: #727272;
 }
+.btn-primary {
+    background-color: #FF900E;
+    color: white;
+    padding: 22px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
 
 /* header styles  */
 
@@ -57,4 +67,18 @@ header {
 .brand {
     font-weight: 700;
     font-size: 2.5rem;
+}
+
+/* banner style  */
+.banner-content {
+    max-width: 860px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.banner-title {
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.banner-img {
+    width: 100%;
 }
