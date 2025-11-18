@@ -177,12 +177,42 @@ img {
     padding: 40px;
     margin-top: -70px;
     margin-left: -70px;
-    text-align: center;
 }
 
 #experience-year {
     font-size: 3.5rem;
     font-weight: 700;
+}
+
+/* achivment part  */
+.achivment-part {
+    margin-bottom: 100px;
+}
+
+.achivment-description {
+    max-width: 500px;
+    margin-bottom: 80px;
+}
+.achivment-description-title{
+    margin-bottom: 20px;
+}
+
+.achivment-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 90px;
+}
+
+.individual-achivment {
+    border: 1px solid rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+}
+
+.individual-achivment-title {
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 /* responsive media query */
@@ -200,7 +230,7 @@ img {
         text-align: center;
     }
 
-    .team-img {
+    .team-img{
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -208,12 +238,15 @@ img {
         flex-direction: column;
 
     }
-
     #experience-badge {
         margin-top: 20px;
         margin-left: 20px;
+        text-align: center;
     }
-
+    .achivment-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
 }
 
 /* medium device  */
@@ -222,9 +255,12 @@ img {
         flex-direction: column;
         text-align: center;
     }
-
     .features-details-section {
         flex-direction: column;
         text-align: center;
+    }
+    .achivment-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
 }
